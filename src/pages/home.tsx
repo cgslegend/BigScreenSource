@@ -3,6 +3,8 @@ import './home.scss';
 import {Chart1} from "../components/Chart-1";
 import {Chart3} from "../components/Chart-3";
 import {Chart2} from "../components/Chart-2";
+import {Time} from "../components/time";
+import {Weather} from "../components/weather";
 
 export const Home = () => {
     const year = new Date().getFullYear()
@@ -10,9 +12,9 @@ export const Home = () => {
   return (
     <div className='home'>
         <header className='bordered'>
-            <div className='date'>2020202020</div>
+            <Time/>
             <div className='title'>国家公安合成作战平台</div>
-            <div className='weather'>晴天她她她</div>
+            <Weather/>
         </header>
         <main>
             <section className='section1 bordered'>
@@ -20,6 +22,7 @@ export const Home = () => {
             </section>
             <section className='section2 bordered'>
                 <Chart2/>
+
             </section>
             <section className='section3 bordered'>
                 <Chart3/>
